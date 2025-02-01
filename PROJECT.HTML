@@ -1,0 +1,745 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]> <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]> <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js"> <!--<![endif]-->
+<head id="Head1">  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="msvalidate.01" content="B91446B2F3FBE1C00E02A5EBD3A8ABA7" />
+  <link rel="stylesheet" href="/assets/bootstrap-min.css" />
+  <link rel="stylesheet" href="/assets/font-awesome-min.css" />
+  <link rel="stylesheet" href="/assets/owl-carousel.css" />
+  <link rel="stylesheet" href="/assets/owl-theme.css" />
+  <link rel="stylesheet" href="/assets/avada.css?v=2" />
+  <style>/* Global Styles */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background-color: #f9f9f9;
+}
+
+a {
+  text-decoration: none;
+  color: #337ab7;
+}
+
+a:hover {
+  color: #23527c;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+h1 {
+  font-size: 36px;
+}
+
+h2 {
+  font-size: 24px;
+}
+
+h3 {
+  font-size: 18px;
+}
+
+h4 {
+  font-size: 16px;
+}
+
+h5 {
+  font-size: 14px;
+}
+
+h6 {
+  font-size: 12px;
+}
+
+p {
+  margin-bottom: 10px;
+}
+
+/* Header Styles */
+
+.masthead {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+.masthead .logo {
+  margin: 0 auto;
+  display: block;
+}
+
+.masthead .logo img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+
+.nav-header {
+  background-color: #333;
+  padding: 10px;
+  text-align: center;
+}
+
+.nav-header .logo {
+  margin: 0 auto;
+  display: block;
+}
+
+.nav-header .logo img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+
+.nav-header .searchbox {
+  margin: 10px auto;
+  display: block;
+  width: 50%;
+}
+
+.nav-header .searchbox input[type="text"] {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+}
+
+.nav-header .searchbox input[type="submit"] {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  background-color: #337ab7;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.nav-header .searchbox input[type="submit"]:hover {
+  background-color: #23527c;
+}
+
+.nav-header .loginstatus {
+  margin: 10px auto;
+  display: block;
+  width: 50%;
+  text-align: center;
+}
+
+.nav-header .loginstatus a {
+  color: #337ab7;
+}
+
+.nav-header .loginstatus a:hover {
+  color: #23527c;
+}
+
+/* Navigation Styles */
+
+#mainNavigation {
+  background-color: #333;
+  padding: 10px;
+  text-align: center;
+}
+
+#mainNavigation ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+#mainNavigation li {
+  margin-right: 20px;
+}
+
+#mainNavigation a {
+  color: #fff;
+  text-decoration: none;
+}
+
+#mainNavigation a:hover {
+  color: #337ab7;
+}
+
+#mainNavigation .dropdown {
+  position: relative;
+}
+
+#mainNavigation .dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #333;
+  padding: 10px;
+  border: 1px solid #ccc;
+  display: none;
+}
+
+#mainNavigation .dropdown-menu li {
+  margin-bottom: 10px;
+}
+
+#mainNavigation .dropdown-menu a {
+  color: #fff;
+  text-decoration: none;
+}
+
+#mainNavigation .dropdown-menu a:hover {
+  color: #337ab7;
+}
+
+#mainNavigation .dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+/* Main Content Styles */
+
+.main-content {
+  padding: 20px;
+}
+
+.main-content h1 {
+  margin-bottom: 10px;
+}
+
+.main-content p {
+  margin-bottom: 20px;
+}
+
+/* Footer Styles */
+
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+footer ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+footer li {
+  margin-right: 20px;
+}
+
+footer a {
+  color: #fff;
+  text-decoration: none;
+}
+
+footer a:hover {
+  color: #337ab7;
+}
+
+.copyright {
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+}
+
+.copyright a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.copyright a:hover {
+  color: #337ab7;
+}
+
+/* Responsive Styles */
+
+@media (max-width: 768px) {
+  .nav-header .searchbox {
+    width: 100%;
+  }
+
+  .nav-header .loginstatus {
+    width: 100%;
+  }
+
+  #mainNavigation ul {
+    flex-direction: column;
+  }
+
+  #mainNavigation li {
+    margin-bottom: 10px;
+  }
+
+  footer ul {
+    flex-direction: column;
+  }
+
+  footer li {
+    margin-bottom: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .masthead {
+    padding: 10px;
+  }
+
+  .nav-header {
+    padding: 10px;
+  }
+
+  .main-content {
+    padding: 10px;
+  }
+
+  footer {
+    padding: 10px;
+  }
+
+  .copyright {
+    padding: 10px;
+  }
+}</style>
+  <script type="text/javascript" src="/assets/modernizr-custom-min.js"></script>
+  <meta name="author" content="Carbon Footprint Ltd using RADsite CMS (https://www.radsite.co.uk/)" />
+  <meta name="copyright" content="Copyright Carbon Footprint Ltd and RADsite Ltd - All Rights Reserved"><title>
+	carbonfootprint.com - Carbon Footprint Calculator
+</title><meta name="description" content="Use the World’s most popular online carbon footprint calculator, and it's FREE. Calculate your carbon emissions from Buildings, Cars, Flights and other sources." />
+<meta name="keywords" content="carbon footprint, carbon dioxide, global warming, climate change, carbon offset, carbon, offsetting, carbon neutral, CRC, carbon reduction commitment" />
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-7DKX1CLQBT"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-7DKX1CLQBT');
+  </script>
+<link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.css" />
+<script src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.js"></script>
+<script>
+window.addEventListener("load", function(){
+window.cookieconsent.initialise({
+  "palette": {
+    "popup": {
+      "background": "#332e2e"
+    },
+    "button": {
+      "background": "#22ab16"
+    }
+  },
+  "position": "top",
+  "static": true,
+  "content": {
+    "message": "Like most websites we use cookies to make it easier for you to use...  and save the planet too! By continuing to use carbonfootprint.com you accept our cookie policy.",
+    "dismiss": "I accept!",
+    "link": "Learn more",
+    "href": "https://www.carbonfootprint.com/policy.html"
+  }
+})});
+</script></head>
+<body>
+<form method="post" action="./calculator.aspx" id="form1">
+<div class="aspNetHidden">
+<input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="" />
+<input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="" />
+<input type="hidden" name="__LASTFOCUS" id="__LASTFOCUS" value="" />
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="XButUGcRk64c5wyDjpNdl+CvBLyEygX+A7R34mmKNexWDDUBMtoM/j4wMApKSFbFcMm1nKMlRCUsllftQBuMpxICuPrw9hsJeyF1XDwFsB5deDxEk39ALvPqA7Jx1Iy/BYpsp3Drcd336eLW0XrmyjDoTr5H/N3lVtcIa/5ivKOg08GSs/3K8BgxCeoxrxiOsh55OKMFzzydYCubkbwa7XKJa/AnGHBRW1Q6Zfj4S2p81rGtEcnePgo2ufpTq8bhB/Gi/+Qn4N5uzf7jku79lfc62ahrfaDIMNoaYZzaaezBHnxvX6EEjKNy2AOdtQoTjUGqwMdt7a3GL/gcYjgxXgAepp73i8nNUI4lfcsQCHTn/weqBJlLbTtQEqhpNG5CTRFDdMz9gIyRneWn0BguKUjYR22UnjCaawifxA/LL8h3Hd2eF4JVt6pRbdxyjTynMjUIRUj70GY1/NXm44Ln9p2kwDKOgS7rTUJWq3+cxjCztkGJo+fAYE1FANF9qODW6WMK0LbpU7dcMMBNw1BINK3Cfm2YRFbZMbe0mZ8aM3mkU9Qk4ypqznpIvHic0ySyuKIaSyFK86UmTPK/xcWvpL/GPIK1zDd/zhurKQJX5FTFhxBCwsuT/T29WpUCuOP82au04mFHZaWdmVKTP6AcQG3IOQNYv6p0kC6A6svO/O9kkkhYE4JJrpRztBSNJyIp/G5JjKES1bpRWDPJZPGecCG+j8dQOPZhSd6PWzFWBPLXLSQQixYajC23LcK3rBXOoirYnNrWEF4vgEtHKfegdLJYAeZgX3VStK45jIn8UTBqVNAFdMlTc1zmhdPNuJlEHt+xWd04aXKdjJgo6nE5OcvEoPdx5fWdNZvRTld48xXieGRHCdgqC0ygyvtTAIswzvZCFeJTnBzGPiyrfCvdbhNrJaeMH5ZiC5sa/8lXGfq/JvcP" />
+</div>
+
+<script type="text/javascript">
+//<![CDATA[
+var theForm = document.forms['form1'];
+if (!theForm) {
+    theForm = document.form1;
+}
+function __doPostBack(eventTarget, eventArgument) {
+    if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+        theForm.__EVENTTARGET.value = eventTarget;
+        theForm.__EVENTARGUMENT.value = eventArgument;
+        theForm.submit();
+    }
+}
+//]]>
+</script>
+
+
+<div class="aspNetHidden">
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="10DAA136" />
+	<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="Zabb45EuwmvdlibX3XQ7kfnRxblHSV9T+NoZrVeEO4HIjbUtU0VNWHrFTC2Tjg/rXiATHaOz4IIc0EvFoTNH9wLVLP1Hpz6DEsiqk82nPnSLDms/mKmR17w/U2WrNNIYXX6W/4/UT7HHXAm3HOEL22yFIIY8LhvDOor6IwqAChkT0+edAYo21IuYX7JDUu8GZeBEaEvTHcGuQGiQjjHiinUnFjbtTILlUnatdExTGty5nrsDb0+HGBOg/NFfpYuOwIe7cXy/SA+MVVS4t1tp7SkNLJPpVy9ZIc34+LniTqwCVajGPkadL+CtAYC9ucngA0xt+OIdg693c7nvH+yaoUliz5ThNPt3bovTFPSCmEAq+1KtW1RHnxw1h54r9RxfJ0Pg4JlBmLBDliVZF2Qrgof8iPnvXf1g2oI92PhQKMwBTCPctpGc195Pecb+VlstDcrBIg==" />
+</div>
+<header class="masthead">
+  <div class="container">
+    <div class="nav-header">
+      <div class="logo">
+        <a href="/"><img src="/assets/carbonfootprintlogo.gif" class="img-responsive" alt="Carbon Footprint logo" width="100" height="100" /></a>
+      </div>
+      <div class="pull-right">
+        <div class="searchbox">
+          <p class="strapline">Call us on <span>+44 (0)1256 592599</span></p>
+          <div class="loginstatus">You are not logged in<br /><a href="https://secure.carbonfootprint.com/users/default.aspx?ReturnUrl=https%3a%2f%2fwww.carbonfootprint.com%2fcalculator.aspx">Log In / Create Account</a></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+<nav id="mainNavigation" class="navbar navbar-dafault main-navigation">
+  <div class="container">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#main-nav-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+        </button>
+    </div>
+    <div class="radmenu collapse navbar-collapse" id="main-nav-collapse">
+        <ul class="nav navbar-nav navbar-right">
+            <li class="dropdown menufirst ">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span>CALCULATE</span></a>
+                <ul class="dropdown-menu">
+                    <li class="menufirst ">
+                        <a href="/measure.html">Calculate</a>
+                    </li>
+                    <li>
+                        <a href="/calculator1.html">Free calculators</a>
+                    </li>
+                    <li>
+                        <a href="/tracker.html">Sustrax MX</a>
+                    </li>
+                    <li>
+                        <a href="/calculatorfaqs.html">Calculator FAQs</a>
+                    </li>
+                    <li class="menulast">
+                        <a href="/mobile_web_apps.html">Mobile and Web Apps</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="dropdown ">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span>OFFSETTING</span></a>
+                <ul class="dropdown-menu">
+                    <li class="menufirst ">
+                        <a href="/carbonoffset.html">Offsetting</a>
+                    </li>
+                    <li>
+                        <a href="/carbonoffsetprojects.html">Our Offset Projects</a>
+                    </li>
+                    <li>
+                        <a href="/treeplanting.html">Tree Planting</a>
+                    </li>
+                    <li>
+                        <a href="/qasqualityassuranceschemecarbonoffsetting.html">Integrity - QAS</a>
+                    </li>
+                    <li>
+                        <a href="/carbon_credit_ratings.html">Carbon Offset Credit Ratings</a>
+                    </li>
+                    <li>
+                        <a href="/carbonneutrality.html">Neutrality & Net Zero</a>
+                    </li>
+                    <li>
+                        <a href="/offsetting-videos.html">Offsetting Videos</a>
+                    </li>
+                    <li class="menulast">
+                        <a href="/carbonoffset_faq.html">Carbon Offsetting FAQs</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="dropdown ">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span>BUSINESSES</span></a>
+                <ul class="dropdown-menu">
+                    <li class="menufirst ">
+                        <a href="/companiescalc.html">Carbon Footprinting</a>
+                    </li>
+                    <li>
+                        <a href="/verify.html">Verification</a>
+                    </li>
+                    <li>
+                        <a href="/sciencebasedtargets.html">Target Setting</a>
+                    </li>
+                    <li>
+                        <a href="/supplychainfootprint.html">Supply Chain Footprinting</a>
+                    </li>
+                    <li>
+                        <a href="/compliance.html">Compliance</a>
+                    </li>
+                    <li>
+                        <a href="/cfpstandard.html">Standards</a>
+                    </li>
+                    <li>
+                        <a href="/energyperformancecorp.html">Carbon Reduction</a>
+                    </li>
+                    <li>
+                        <a href="/productlifecycle.html">Product Footprinting</a>
+                    </li>
+                    <li>
+                        <a href="/servicefootprinting.html">Service Footprinting</a>
+                    </li>
+                    <li>
+                        <a href="/airlines.html">Airlines-CORSIA</a>
+                    </li>
+                    <li class="menulast">
+                        <a href="/sustainability_services.html">Other Services</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="dropdown ">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span>INFORMATION</span></a>
+                <ul class="dropdown-menu">
+                    <li class="menufirst ">
+                        <a href="/warming.html">Climate Change</a>
+                    </li>
+                    <li>
+                        <a href="/carbonoffsetting_covid19.html">Why Carbon Offset Now</a>
+                    </li>
+                    <li>
+                        <a href="/reduce.html">Reduce Emissions</a>
+                    </li>
+                    <li>
+                        <a href="/carbondi.html">Carbon Database Initiative - CaDI</a>
+                    </li>
+                    <li>
+                        <a href="/deforestation.html">Deforestation</a>
+                    </li>
+                    <li>
+                        <a href="/sustainable_flying.html">Sustainable Flying</a>
+                    </li>
+                    <li>
+                        <a href="/un_sus_dev_goals.html">United Nations Sustainable Development Goals</a>
+                    </li>
+                    <li>
+                        <a href="/homework_footprint.html">Homework Footprint</a>
+                    </li>
+                    <li>
+                        <a href="/videos.html">Videos</a>
+                    </li>
+                    <li>
+                        <a href="/carbonacademy_sbn.html">Sustainable Business Network</a>
+                    </li>
+                    <li class="menulast">
+                        <a href="/international_electricity_factors.html">International Electricity Factors</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="dropdown ">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span>ABOUT US</span></a>
+                <ul class="dropdown-menu">
+                    <li class="menufirst ">
+                        <a href="/aboutus.html">About Us</a>
+                    </li>
+                    <li>
+                        <a href="/ourteam.html">Our Team</a>
+                    </li>
+                    <li>
+                        <a href="/clients.html">Our Clients</a>
+                    </li>
+                    <li>
+                        <a href="/our_sustainability.html">Our Sustainability</a>
+                    </li>
+                    <li>
+                        <a href="/news.html">Our News</a>
+                    </li>
+                    <li class="menulast">
+                        <a href="/careers.html">Join Us</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="dropdown ">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span>CONTACT</span></a>
+                <ul class="dropdown-menu">
+                    <li class="menufirst menulast">
+                        <a href="/contact.aspx">Contact Us</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="dropdown menulast">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span>MY ACCOUNT</span></a>
+                <ul class="dropdown-menu">
+                    <li class="menufirst ">
+                        <a href="https://secure.carbonfootprint.com/users/">My Account</a>
+                    </li>
+                    <li class="menulast">
+                        <a href="/basket.aspx">Shopping Basket</a>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+  </div>
+</nav>
+<script type="text/javascript" src="/assets/jquery-1-12-2-min.js"></script>
+<script type="text/javascript" src="/assets/bootstrap-min.js"></script>
+<script type="text/javascript" src="/assets/owl-carousel.js"></script>
+<script type="text/javascript" src="/assets/jquery-hoverdir.js"></script>
+
+<div class="main-content">
+  <section class="bg-white">
+    <div class="container">
+      <div class="headline text-center">
+        <div class="row">
+          <div class="col-md-6 col-md-offset-3">
+            <h1 class="section-title">Carbon Calculator</h1>
+            <p class="section-sub-title">carbon footprint calculator for individuals and households</p>
+          </div>
+        </div>
+      </div>
+    <!-- MAIN PAGE CONTENT START -->
+<h2>This carbon calculator is provided free to use</h2>
+<h4>Show you care for the environment and communities across the World by Carbon Offsetting.</h4>
+<p>You can support <a href="/carbonoffset.html">Carbon Offsetting</a> Projects that both tackle climate change and support impoverished communities across the world.
+Just click the ‘Offset’ button after you have finished your calculation. It takes only a few easy clicks and costs only a few Pounds/Dollars/Euros per tonne CO<sub>2</sub>.&nbsp;<strong>You also get a personalised Certificate&nbsp;recognising&nbsp;your offsetting - makes an ideal gift too!</strong></p>
+<p><a href="/calculatorfaqs.html" target="_blank"><img src="/images/icon-black-info.png" alt="icon-black-info.png" style="width: 40px; height: 40px;" onmouseover="this.src='/images/icon-green-info.png';" onmouseout="this.src='/images/icon-black-info.png';" title="Calculator Help and Frequently Asked Questions" /></a>&nbsp;<a href="/ieafactors.aspx" target="_blank"><img src="/images/icon-black-electricity.png" alt="icon-black-electricity.png" onmouseover="this.src='/images/icon-green-electricity.png';" onmouseout="this.src='/images/icon-black-electricity.png';" title="International Electricity Emission Factors" style="width: 40px; height: 40px;" /></a>&nbsp;<a href="https://secure.carbonfootprint.com/users/" target="_blank"><img src="/images/icon-black-account.png" alt="icon-black-account.png" onmouseover="this.src='/images/icon-green-account.png';" onmouseout="this.src='/images/icon-black-account.png';" title="Create an Account or Login" style="width: 40px; height: 40px;" /></a></p>
+<div style="background-color: rgba(3, 95, 3, 0.83); color: white; text-align: center; padding: 20px; width: 100%; margin-bottom: 10px;">
+<strong><span style="font-size: 20px;">Try Our New &amp; Improved Carbon Calculator!</span></strong><br />
+<span style="font-size: 18px;">It's free to use and better than ever. Calculate your lifestyle emissions here -&nbsp;<strong><a href="https://www.carbonfootprint.com/sustraxvita.html" style="color: white; text-decoration: underline;">Sustrax Vita</a></strong></span>
+</div>
+
+<div id="pnlLanguage">
+	
+    <div id="language">
+        <span id="lblLanguage">Language:</span>
+        <select name="ctl00$ddlLanguage" onchange="javascript:setTimeout(&#39;__doPostBack(\&#39;ctl00$ddlLanguage\&#39;,\&#39;\&#39;)&#39;, 0)" id="ddlLanguage">
+		<option value="en-GB">English (United Kingdom)</option>
+		<option selected="selected" value="en-US">English (United States)</option>
+		<option value="fr">fran&#231;ais</option>
+		<option value="de">Deutsch</option>
+		<option value="es">espa&#241;ol</option>
+		<option value="it">italiano</option>
+		<option value="cs">čeština</option>
+		<option value="sk">slovenčina</option>
+		<option value="pl">polski</option>
+		<option value="hu">magyar</option>
+		<option value="lt">lietuvių</option>
+		<option value="ru">русский</option>
+		<option value="ja">日本語</option>
+		<option value="zh-Hans">中文(简体)</option>
+
+	</select><noscript><input type="submit" name="ctl00$btnGoLang" value="Go" id="btnGoLang" class="linkbutton" /></noscript>
+    </div>
+
+</div>
+
+
+
+
+
+<div style="clear: both;"></div>
+
+    <div id="cphContent_pnlAnonymous">
+	
+        <div class="whycreate"><input type="submit" name="ctl00$cphContent$btnWhy" value="Why create an account?" onclick="document.getElementById(&#39;cphContent_WhyCreate&#39;).style.display = &#39;inline&#39;; return false;" id="cphContent_btnWhy" class="linkbutton" /></div>
+        <div id="cphContent_WhyCreate" style="display: none;">
+            <p>Creating a free user account is quick and simple, and allows you to:</p>
+            <ul>
+                <li>Save your data so you can revisit and update your calculation when you like</li>
+                <li>Enter more cars and flights</li>
+                <li>Enter information about other items you may own</li>
+                <li>Save and compare multiple sets of results allowing you to track your progress from one year to the next</li>
+            </ul>
+        </div>        
+    
+</div>
+    
+    
+    <iframe src="https://www.facebook.com/plugins/like.php?href=https://www.carbonfootprint.com/calculator.aspx" scrolling="no" frameborder="0" style="border:none; width:450px; height:30px"></iframe>
+    <iframe src="https://calculator.carbonfootprint.com/calculator.aspx?c=Full&h=a5529fc3cd714b361fd0019e151537c4" id="cphContent_ifrCalc" style="width: 100%; height: 1200px;" frameborder="0" marginwidth="0" marginheight="0" scrolling="no">
+    </iframe>
+
+<div style="background-color: rgb(29, 125, 29); color: white; text-align: center; padding: 20px; width: 100%; margin-bottom: 10px;">
+<strong><span style="font-size: 20px;">Try Our New &amp; Improved Carbon Calculator!</span></strong><br />
+<span style="font-size: 18px;">It's free to use and better than ever. Calculate your lifestyle emissions here -&nbsp;<strong><a href="https://www.carbonfootprint.com/sustraxvita.html" style="color: white; text-decoration: underline;">Sustrax Vita</a></strong></span>
+</div>
+    <!-- MAIN PAGE CONTENT END -->
+    </div>
+  </section>
+</div>
+<footer>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-3 col-sm-6 col-xs-6 footer-widget">
+        <h4>Carbon Offsetting</h4>
+        <div class="col-md-12 col-sm-12 col-xs-12">
+          <ul class="row footer-links">
+            <li><a href="/carbonneutrality.html" title="Neutrality & Net Zero">Carbon Neutral</a></li>
+            <li><a href="/carbonoffset.html" title="Offsetting">Carbon Offsets</a></li>
+            <li><a href="/offsetalternativeenergy.html" title="VCS offsets">Verified Carbon Standard</a></li>
+            <li><a href="/offsetprojects.html" title="Gold Standard VERs">Gold Standard VER</a></li>
+            <li><a href="/certifiedemissionreductioncer.html" title="CER offsets">Certified Emission Reduction</a></li>
+            <li><a href="/qasqualityassuranceschemecarbonoffsetting.html" title="Integrity - QAS">Quality Assurance Standard</a></li>
+            <li><a href="/qasqualityassuranceschemecarbonoffsetting.html" title="Integrity - QAS">QAS Carbon Offsetting</a></li>
+            <li><a href="/carbonneutrality.html" title="Neutrality & Net Zero">PAS 2060</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-md-3 col-sm-6 col-xs-6 footer-widget">
+        <h4>Consultancy</h4>
+        <div class="col-md-12 col-sm-12 col-xs-12">
+          <ul class="row footer-links">
+            <li><a href="/carbonmanagement.html" title="Carbon Management">Carbon and GHG management</a></li>
+            <li><a href="/verify.html" title="Verification">Verification and Assurance</a></li>
+            <li><a href="/sciencebasedtargets.html" title="Target Setting">Target Setting</a></li>
+            <li><a href="/compliance.html" title="Compliance">Mandatory GHG Rpt, ESOS, CRC, CDP</a></li>
+            <li><a href="/iso14001.html" title="ISO14001">ISO 14001 support</a></li>
+            <li><a href="/iso50001.html" title="ISO 50001">ISO 50001 support</a></li>
+            <li><a href="/energyperformancecorp.html" title="Carbon Reduction">Energy Management and ESOS</a></li>
+            <li><a href="/lifecycletools.html" title="Life Cycle Tools">Lifecycle Assessments (LCA)</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-md-3 col-sm-6 col-xs-6 footer-widget">
+        <h4>Software and Services</h4>
+        <div class="col-md-12 col-sm-12 col-xs-12">
+          <ul class="row footer-links">
+            <li><a href="/productlifecyclefactors.html" title="Emission Factors">emission factors</a></li>
+            <li><a href="/waste_index.html" title="Waste Footprint Services">Waste Management</a></li>
+            <li><a href="/sustainability_index.html" title="Sustainability Footprint">Sustainability Reporting</a></li>
+            <li><a href="/energybrokering.html" title="Energy Brokering">Energy Brokering</a></li>
+            <li><a href="/tracker.html" title="Sustrax MX">Carbon Tracker Software Tools</a></li>
+            <li><a href="/training.html" title="Training">Classroom Training & Workshops</a></li>
+            <li><a href="/elearning.html" title="E-learning">E-Learning, online training tools</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-md-3 col-sm-6 col-xs-6 footer-widget">
+        <h4>Contact and Follow Us</h4>
+        <p>Carbon Footprint Ltd<br />Belvedere House<br />Basing View<br />Basingstoke<br />Hampshire, RG21 4HG, UK</p>
+        <p>Email: <a href="mailto:info@carbonfootprint.com">info@carbonfootprint.com</a></p>
+        <p>Telephone: +44 (0)1256 592599</p>
+        <ul class="footer-share-button">
+          <li><a href="https://twitter.com/CarbonAcademy" target="_blank"><i class="fa fa-twitter"></i></a></li>
+          <li><a href="https://www.facebook.com/carbonfootprintltd" target="_blank"><i class="fa fa-facebook"></i></a></li>
+          <li><a href="https://www.youtube.com/user/JohnBuckleyCarbon" target="_blank"><i class="fa fa-youtube"></i></a></li>
+          <li><a href="https://www.linkedin.com/company/carbon-footprint-ltd" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</footer>
+<div class="copyright">
+  <div class="container">
+    <div class="col-md-2 col-sm-12 col-xs-12"><a href="/termsandconditions.html">Terms And Conditions</a><br /><a href="/policy.html">Cookie Policy</a></div>
+    <div class="col-md-6 col-sm-12 col-xs-12">Carbon Footprint Ltd is registered in England and Wales (no. 4532520)<br />Registered Office: Belvedere House, Basing View, Basingstoke, Hampshire, RG21 4HG, UK</div>
+    <div class="col-md-4 col-sm-12 col-xs-12">&copy; Carbon Footprint Ltd - all rights reserved<br />Website developed by <a href="https://www.radsite.co.uk/" title="RADsite Web Development" target="_blank">RADsite</a></div>
+  </div>
+</div>
+</form>
+</body>
+</html>
